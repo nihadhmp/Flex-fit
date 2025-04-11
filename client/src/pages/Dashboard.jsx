@@ -1,11 +1,8 @@
 import React from "react";
-import { MdPerson } from "react-icons/md";
-import { GoBellFill } from "react-icons/go";
-import { IoMdSettings } from "react-icons/io";
-import { CiSearch } from "react-icons/ci";
 import graph from "../assets/graph.png";
 import Calendar from "react-calendar";
 import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
 
 function Dashboard() {
   return (
@@ -13,16 +10,7 @@ function Dashboard() {
       <div className="w-[100%] h-[100%] flex  [font-family:'Poppins',sans-serif] bg-[#242529] gap-10">
         <Sidebar />
         <section className="flex flex-col gap-30 pt-14 ">
-          <div className="flex items-center gap-7">
-            <div className="flex w-[890px] bg-[#35373B] rounded-[24px] items-center px-1">
-              {" "}
-              <CiSearch className="text-[#ff7200] text-2xl bg-[#f5f5f5] size-10 rounded-full mr-0.5 " />
-              <input className="w-full bg-[#35373B] rounded-[24px] py-3 " />
-            </div>
-            <GoBellFill className="bg-[#35373B] size-12 text-[#FF7200] rounded-full p-2" />
-            <IoMdSettings className="bg-[#35373B] size-12 text-[#FF7200] rounded-full p-2" />
-            <MdPerson className="bg-[#35373B] size-12 text-[#FF7200] rounded-full p-1" />
-          </div>
+          <Navbar />
           <div className=" flex gap-10 ">
             {" "}
             <div className="flex flex-col gap-10">

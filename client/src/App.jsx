@@ -8,6 +8,7 @@ import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 import WorkoutPlans from "./pages/WorkoutPlans";
 import Signup from "./pages/Signup";
+import Notification from "./pages/Notification";
 
 function App() {
   return (

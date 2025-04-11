@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 function Sidebar() {
   return (
     <>
-      <div className="w-[280px] h-[1025px] bg-[#35373B] flex flex-col justify-between text-xl items-center py-10">
+      <div className="w-[300px] h-[1025px] bg-[#35373B] flex flex-col justify-between text-xl items-center py-10">
         <div className="w-[280px] flex flex-col gap-15 items-center">
           <div className="">
             <img src={flexfit} alt="" />
@@ -25,7 +25,7 @@ function Sidebar() {
 
             <p className="text-[#f5f5f5] break-words">Workout plans</p>
           </Link>
-          <Link to="attendance">
+          <Link to="/attendance">
             <p className="text-[#f5f5f5] break-words">Attendance</p>
           </Link>
         </div>
